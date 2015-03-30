@@ -1,0 +1,34 @@
+{
+  "name": "jquery-layout",
+  "version": "0.1.0",
+  "description": "A tiny layout engine on top of jQuery",
+  "main": "jquery.layout.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scravy/jquery-layout.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "layout"
+  ],
+  "author": "Julian Fleischer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scravy/jquery-layout/issues"
+  },
+  "homepage": "https://github.com/scravy/jquery-layout",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-esmangle": "^1.1.1",
+    "gulp-jshint": "^1.9.4",
+    "gulp-nodeunit": "0.0.5",
+    "gulp-rename": "^1.2.0"
+  },
+  "dependencies": {
+    "del": "^1.1.1"
+  }
+}
