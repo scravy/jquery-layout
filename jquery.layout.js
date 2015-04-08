@@ -50,6 +50,7 @@
                 var px = parseInt(space);
                 remainingSpace -= px;
                 applySize($child, attr, px);
+
             } else if (space.match(/^(100|[1-9][0-9]?|0)%$/)) {
                 var percent = parseInt(space) / 100;
                 layouter.push(function () {
@@ -57,11 +58,13 @@
                     applySize($child, attr, space);
                     remainingSpace2 -= space;
                 });
+
             } else if (space == "*") {
                 layouter2.push(function () {
                     var space = Math.ceil(remainingSpace2 / layouter2.length);
                     $child[attr](space);
                 });
+
             } else {
                 $child.hide();
             }

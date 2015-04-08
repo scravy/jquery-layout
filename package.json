@@ -1,10 +1,11 @@
 {
   "name": "jquery-layout",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A tiny layout engine on top of jQuery",
   "main": "jquery.layout.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "gulp build",
+    "test": "gulp lint"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,5 @@
     "gulp-jshint": "^1.9.4",
     "gulp-nodeunit": "0.0.5",
     "gulp-rename": "^1.2.0"
-  },
-  "dependencies": {
-    "del": "^1.1.1"
   }
 }
